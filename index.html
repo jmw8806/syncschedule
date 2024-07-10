@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncSchedule</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="dark">
+    <header>
+        <div id="title-bar" class="mid">
+            <h3>Hello Jan</h3>
+            <h1 class="text-center">SyncSchedule</h1>
+        </div>
+        <div id="profile-container" class="mid">
+            <div id="profile-image"></div>
+            <a href="#">Logout</a>
+            <a href="#">Settings</a>
+        </div>
+        <form id="time-form" class="dark">
+            <select id="pickDropdown" name="pickDropdown" class="m5">
+                <option value="first">First Pick</option>
+                <option value="second">Second Pick</option>
+                <option value="extra">Extra</option>
+            </select>
+            <p class="m5 weekly-hours">Weekly Hours: 30</p>
+            <p class="m5 seniority-level">Seniority Level: 7</p>
+            <select id="timePeriodDropdown" class="m5" name="timePeriodDropdown">
+                <option value="6/18-7/01">6/18-7/01</option>
+                <option value="7/02-7/16">7/02-7/16</option>
+                <option value="7/16-7/30">7/16-7/30</option>
+            </select>
+            <div class="time-selector m5">
+                <input type="radio" id="am" name="time" value="AM" checked>
+                <label for="am">AM</label>
+                <input type="radio" id="pm" name="time" value="PM">
+                <label for="pm">PM</label>
+                <input type="radio" id="noc" name="time" value="NOC">
+                <label for="noc">NOC</label>
+            </div>
+            <select id="hoursDropdown" name="hoursDropdown" class="m5">
+                <option value="1400-2000">1400-2000</option>
+                <option value="1400-2200">1400-2200</option>
+                <option value="1400-0000">1400-0000</option>
+            </select>
+        </form>
+    </header>
+    <div id="bottom-container">
+        <div id="cal-container-top">
+            <div class="cal-container">
+                <table class="cal-table" id="cal-table-top">
+                        <tbody>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Jan F. 3</li>
+                                    <li>Joe D. 4</li>
+                                    <li>Frank F. 7</li>
+                                    <li>Bobby K. 9</li>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>                              
+                            </td>
+                            <td>
+                                <ul>
+                                   
+                                </ul>
+                                <button type="button" class="add-shift">+</button>
+                            </td>
+                            <td>
+                                <ul>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="hours-total-container">
+                <h3>30</h3>
+            </div>
+        </div>
+        <div id="cal-container-bottom">
+            <div class="cal-container">
+                <table class="cal-table" id="cal-table-top">
+                        <tbody>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Jan F. 3</li>
+                                    <li>Joe D. 4</li>
+                                    <li>Frank F. 7</li>
+                                    <li>Bobby K. 9</li>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>
+                            </td>
+                            <td>                                <ul>
+                                <button type="button" class="add-shift">+</button>
+                            </ul>
+                        </td>
+                            <td>                                <ul>
+                                <button type="button" class="add-shift">+</button>
+                            </ul></td>
+                            <td>                                <ul>
+                                <button type="button" class="add-shift">+</button>
+                            </ul></td>
+                            <td>                                <ul>
+                                <button type="button" class="add-shift">+</button>
+                            </ul></td>
+                            <td><button type="button" class="add-shift">+</button> </td>
+                            <td>
+                                <ul>
+                                    <li>Jan F. 3</li>
+                                    <li>Joe D. 4</li>
+                                    <li>Frank F. 7</li>
+                                    <li>Bobby K. 9</li>
+                                    <button type="button" class="add-shift">+</button>
+                                </ul>    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="hours-total-container">
+                <h3>30</h3>
+            </div>
+        </div>
+        <div id="hours-container" class="mid">
+            <p class="totals-label light">Totals:</p>
+        </div>
+    </div>
+</body>
+</html>

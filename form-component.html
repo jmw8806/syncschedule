@@ -1,0 +1,28 @@
+<link href="style.css" rel="stylesheet">
+<form id="time-form">
+    <select id="pickDropdown" name="pickDropdown" class="m5">
+        <option value="first">First Pick</option>
+        <option value="second">Second Pick</option>
+        <option value="extra">Extra</option>
+    </select>
+    <textbox class="m5">Weekly Hours: 30</textbox>
+    <textbox class="m5">Seniority Level: 7</textbox>
+    <select id="timePeriodDropdown" class="m5" name="timePeriodDropdown">
+        <option value="6/18-7/01">6/18-7/01</option>
+        <option value="7/02-7/16">7/02-7/16</option>
+        <option value="7/16-7/30">7/16-7/30</option>
+    </select>
+    <div class="time-selector m5">
+        <input type="radio" id="am" name="time" value="AM" checked>
+        <label for="am">AM</label>
+        <input type="radio" id="pm" name="time" value="PM">
+        <label for="pm">PM</label>
+        <input type="radio" id="noc" name="time" value="NOC">
+        <label for="noc">NOC</label>
+    </div>
+    <select id="hoursDropdown" name="hoursDropdown" class="m5">
+        <option value="1400-2000">1400-2000</option>
+        <option value="1400-2200">1400-2200</option>
+        <option value="1400-0000">1400-0000</option>
+    </select>
+</form>

@@ -1,0 +1,280 @@
+/* style.css */
+
+.dark {
+    background-color: #464646;
+    color: #fff;
+}
+
+.light {
+    background-color: #c6c6c6;
+    color: #000;
+}
+
+.mid {
+    background-color: #939393;
+    color: #fff;
+}
+
+.m5 {
+    margin: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+}
+/* Time Selector Component */
+.time-selector {
+    display: flex;
+    border: none;
+}
+
+body {
+    width: 1024px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+#bottom-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    height: 400px;
+}
+
+#title-bar {
+    display: grid;  
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+#profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1/span 2;
+    max-width: 170px;
+    padding: 10px;
+}
+
+#profile-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url("img/blankProfile.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+#time-form {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px;;
+    justify-content: center;
+    align-items: center;
+}
+
+form p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.seniority-level {
+    text-align: start;
+}
+
+#hoursDropdown, .seniority-level {
+    margin-right: 10px;
+}
+
+#time-form select {
+    height: 40px;
+}
+
+#time-form .time-selector {
+    justify-self: center;
+}
+
+#cal-container-top {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(169, 236, 251);
+    position: relative;
+}
+
+#cal-container-bottom {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: orange;
+    position: relative;
+}
+
+#hours-container {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    max-width: 190px;
+    z-index: -2;
+    padding: 0;
+}
+
+.cal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+
+.hours-total-container {
+    display: flex;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(149, 228, 149);
+    position: absolute;
+    top: 33%;
+    right: -17%;
+    z-index: -1;
+    justify-content: end;
+    align-items: center;
+}
+.hours-total-container h3 {
+    margin-right: 2rem;
+    font-size: 30px;
+}
+
+.totals-label {
+    font-size: 16px;
+    text-align: center;
+    width: auto;
+    height: 27px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.cal-table {
+    width: 100%;
+    border-collapse: collapse;
+    color:#2e2e2e;
+    height: 100%;
+}
+
+.cal-table ul {
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    unicode-bidi: isolate;
+}
+
+
+.cal-table td {
+    width: 130px;
+    height: max-content;
+    position: relative;
+}
+
+.hours-total-container h3 {
+    position: absolute;
+    z-index: 100;
+}
+
+.cal-table th {
+    background-color: #3e65ff;
+    color:#f9fbec;
+    padding: 5px;
+    width: 130px;
+}
+
+
+.cal-table td:nth-child(even) {
+    background-color: #d4fbfb;
+}
+
+
+
+.cal-table li {
+    display: block;  
+    height: 25px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.cal-table li:nth-child(even) {
+    background-color: #00000025;
+}
+
+.cal-table li:hover {
+    filter: drop-shadow(16px 16px 10px black);
+}
+
+.add-shift {
+    border-radius: 50%;
+    background-color: rgb(146, 255, 138);
+    border: none;
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+}
+.add-shift:hover {
+    background-color: rgb(200, 251, 200);
+}
+.add-shift:active {
+    background-color: green;
+}
+
+.time-selector input[type="radio"] {
+    display: none;
+    height: 20px;
+}
+
+.time-selector label {
+    padding: 10px 10px;
+    margin: 0;
+    cursor: pointer;
+    background-color: #808080;
+    transition: background-color 0.3s;
+}
+
+.time-selector input[type="radio"]:checked + label {
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+.time-selector label:not(:last-of-type) {
+    border-right: none;
+}
+
+.time-selector label:hover {
+    background-color: #525252;
+}
